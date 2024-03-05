@@ -2,29 +2,35 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 730px;
+    max-width: 730px;
     color: var(--black);
 }
 
 .accordion__details {
+    padding: 24px 32px;
     box-sizing: border-box;
-    border-radius: 7px;
+    border-radius: 8px;
     border: 1px solid var(--grey-3);
+    font-family: 'Inter', sans-serif;
 }
 
 .accordion__summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 32px;
+    column-gap: 500px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    height: 72px;
+    color: var(--black);
 }
 
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
+}
+
+.accordion__details[open] {
+    padding-bottom: 32px;
 }
 
 .accordion__details[open] .accordion__summary .accordion__arrow {
@@ -41,8 +47,9 @@
 }
 
 .accordion__text {
-    margin: 0 32px 24px;
+    margin: 16px 0 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: var(--grey-4);
 }
