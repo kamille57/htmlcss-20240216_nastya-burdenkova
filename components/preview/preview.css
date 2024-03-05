@@ -8,6 +8,6 @@
 .preview__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 367px 367px;
+    grid-template-rows: repeat(2, 367px);
     gap: 30px;
 }
