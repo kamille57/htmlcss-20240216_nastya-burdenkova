@@ -1,8 +1,10 @@
 .button {
-    width: 189px;
+    padding: 15px 66px;
     height: 48px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18.75px;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -10,51 +12,37 @@
     transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
-.button_disabled {
+.button:disabled {
     transition: none; 
     cursor: default;
+    pointer-events: none;
     opacity: 0.5;
 }
 
-.button_primary-color {
+.button_primary {
     color: var(--white);
     background-color: var(--blue);
 }
 
-.button_primary-color:hover {
+.button_primary:hover {
     background-color: var(--dark-blue);
 }
 
-.button_primary-color:disabled {
-    cursor: default;
-    opacity: 0.5;
-}
-
-.button_secondary-color {
+.button_secondary {
     color: var(--white);
     background-color: var(--purple);
 }
 
-.button_secondary-color:hover {
+.button_secondary:hover {
     background-color: var(--dark-purple);
 }
 
-.button_secondary-color:disabled {
-    cursor: default;
-    opacity: 0.5;
-}
-
-.button_alternate-color {
+.button_alternate {
     border: 1px solid var(--grey-3);
     background-color: var(--white);
     color: var(--grey-4);
 }
 
-.button_alternate-color:hover {
+.button_alternate:hover {
     border: 1px solid var(--black);
-}
-
-.button_alternate-color:disabled {
-    cursor: default;
-    opacity: 0.5;
 }
