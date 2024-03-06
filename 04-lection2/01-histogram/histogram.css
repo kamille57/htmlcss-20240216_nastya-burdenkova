@@ -1,0 +1,84 @@
+.histogram {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 16px 24px 24px;
+    border: 1px solid var(--grey-3);
+    width: 354px;
+    height: 185px;
+    border-radius: 10px;
+}
+
+.histogram__titles-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.histogram__title-link {
+    align-self: center;
+    color: var(--blue-1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.histogram__title-total {
+    margin: 0;
+    opacity: 80%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.histogram__text {
+    margin: 6px 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    flex-grow: 1;
+}
+
+.histogram__item-container {
+    display: grid;
+    align-items: end;
+    justify-content: space-between;
+    grid-template-columns: repeat(30, 9px);
+    grid-auto-rows: 50px;
+}
+
+.histogram__item {
+    min-height: 11px;
+    background-color: var(--blue-1);
+}
+
+.histogram__item_xxs {
+    height: 17px;
+}
+
+.histogram__item_xs {
+    height: 22px;
+}
+
+.histogram__item_s {
+    height: 30px;
+}
+
+.histogram__item_m {
+    height: 35px;
+}
+
+.histogram__item_l {
+    height: 39px;
+}
+
+.histogram__item_xl {
+    height: 45px;
+}
+
+.histogram__item_xxl {
+    height: 50px;
+}
