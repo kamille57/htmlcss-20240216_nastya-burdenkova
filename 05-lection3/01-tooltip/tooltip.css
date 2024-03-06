@@ -1,9 +1,10 @@
+body {
+    text-align: center;
+}
+
 .tooltip {
     display: inline-block;
     position: relative;
-    width: 1083px;
-    height: 200px;
-    border: 1px solid var(--grey-4);
     text-align: center;
 }
 
@@ -21,7 +22,7 @@
     text-align: center;
     white-space: nowrap;
     position: absolute;
-    top: 20px;
+    bottom: calc(100% - 70px);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -42,6 +43,6 @@
     top: 83px;
 }
 
-.tooltip__trigger:hover ~ .tooltip__bubble {
+.tooltip__trigger:hover~.tooltip__bubble {
     display: block;
 }
