@@ -1,5 +1,5 @@
 .calendar {
-    padding: 28px 36px;
+    padding: 28px 26px 32px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     max-width: 300px;
@@ -32,21 +32,25 @@
 }
 
 .calendar__item-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: var(--grey-5);
-    padding: 8px;
 }
 
 .calendar__item-date {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: var(--oxford-blue);
-    padding: 8px;
 }
 
 .calendar__item-date_bright {
