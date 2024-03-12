@@ -4,17 +4,15 @@
     box-sizing: border-box;
     padding: 16px 24px 24px;
     border: 1px solid var(--grey-3);
-    width: 354px;
-    height: 185px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-.histogram__titles-container {
+.histogram__titles {
     display: flex;
     justify-content: space-between;
 }
 
-.histogram__title-link {
+.histogram__link {
     align-self: center;
     color: var(--blue-1);
     font-family: 'Inter', sans-serif;
@@ -24,7 +22,7 @@
     text-decoration: none;
 }
 
-.histogram__title-total {
+.histogram__total {
     margin: 0;
     opacity: 80%;
     font-family: 'Inter', sans-serif;
@@ -42,43 +40,44 @@
     flex-grow: 1;
 }
 
-.histogram__item-container {
-    display: grid;
+.histogram__chart {
+    margin-top: 39px;
+    height: 50px;
+    display: flex;
     align-items: end;
-    justify-content: space-between;
-    grid-template-columns: repeat(30, 9px);
-    grid-auto-rows: 50px;
+    gap: 1px;
 }
 
 .histogram__item {
-    min-height: 11px;
+    width: 9px;
+    height: 22%;
     background-color: var(--blue-1);
 }
 
 .histogram__item_xxs {
-    height: 17px;
+    height: 34%;
 }
 
 .histogram__item_xs {
-    height: 22px;
+    height: 44%px;
 }
 
 .histogram__item_s {
-    height: 30px;
+    height: 60%;
 }
 
 .histogram__item_m {
-    height: 35px;
+    height: 70%;
 }
 
 .histogram__item_l {
-    height: 39px;
+    height: 78%;
 }
 
 .histogram__item_xl {
-    height: 45px;
+    height: 90%;
 }
 
 .histogram__item_xxl {
-    height: 50px;
+    height: 100%;
 }
