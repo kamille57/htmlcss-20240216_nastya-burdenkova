@@ -36,7 +36,6 @@
 .tooltip__trigger {
     cursor: pointer;
     position: relative;
-    top: 83px;
 }
 
 .tooltip__trigger:hover~.tooltip__bubble {
