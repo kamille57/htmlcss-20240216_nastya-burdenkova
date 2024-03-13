@@ -1,18 +1,11 @@
 .skeleton {
     box-sizing: border-box;
     border: 1px solid var(--grey-3);
-    /* max-width: 579px;
-    height: 192px; */
     border-radius: 8px;
     padding: 24px 40px 32px 24px;
-    display: grid;
-    gap: 16px 24px;
-    grid-template-columns: 64px max-content;
-    grid-template-rows: repeat(2, max-content);
-    grid-template-areas:
-        "logo headers"
-        "logo headers"
-        "texts texts"
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .skeleton__logo {
@@ -24,11 +17,13 @@
 }
 
 .skeleton__headers {
-    grid-area: headers;
     display: grid;
-    gap: 8px;
-    grid-template-rows: repeat(2, 20px);
-    align-content: center;
+    grid-template-columns: min-content 1fr;
+    gap: 0 16px;
+    grid-template-areas: 
+    "logo small"
+    "logo midi";
+    align-items: center;
 }
 
 .skeleton__texts {
@@ -36,20 +31,24 @@
     grid-template-rows: repeat(2, 20px);
     gap: 8px;
     grid-area: texts;
-} 
+}
 
 .skeleton__line {
-background-image: linear-gradient(to right, #DDE2E5 0%, #E2E6E8 25%, #F3F5F5 50%, #E3E7EA 75%, #DDE2E5 100%);;
+    box-sizing: border-box;
+    height: 20px;
+    background-image: linear-gradient(to right, #DDE2E5 0%, #E2E6E8 25%, #F3F5F5 50%, #E3E7EA 75%, #DDE2E5 100%);
 }
 
 .skeleton__line_small {
-    width: 172px;
+    width: 40%;
+    grid-area: small;
 }
 
 .skeleton__line_midi {
-    width: 257px; 
+    width: 59%;
+    grid-area: midi;
 }
 
 .skeleton__line_max {
-    width: 515px;
+    width: 100%;
 }
