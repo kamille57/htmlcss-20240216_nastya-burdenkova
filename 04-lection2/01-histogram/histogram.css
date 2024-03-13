@@ -50,7 +50,6 @@
 
 .histogram__item {
     width: 9px;
-    height: 22%;
     background-color: var(--blue-1);
 }
 
