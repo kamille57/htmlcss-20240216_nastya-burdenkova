@@ -21,20 +21,20 @@
 
 .button_primary {
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--blue-2);
 }
 
 .button_primary:hover {
-    background-color: var(--dark-blue);
+    background-color: var(--blue-3);
 }
 
 .button_secondary {
     color: var(--white);
-    background-color: var(--purple);
+    background-color: var(--purple-1);
 }
 
 .button_secondary:hover {
-    background-color: var(--dark-purple);
+    background-color: var(--purple-2);
 }
 
 .button_alternate {
