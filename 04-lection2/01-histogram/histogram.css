@@ -49,8 +49,12 @@
 }
 
 .histogram__item {
-    width: 9px;
+    flex-basis: 9px;
     background-color: var(--blue-1);
+}
+
+.histogram__item_xxxs {
+    height: 22%;
 }
 
 .histogram__item_xxs {
@@ -58,7 +62,7 @@
 }
 
 .histogram__item_xs {
-    height: 44%px;
+    height: 44%;
 }
 
 .histogram__item_s {
