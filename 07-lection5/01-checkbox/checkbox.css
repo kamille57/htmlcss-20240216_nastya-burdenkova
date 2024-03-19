@@ -47,6 +47,10 @@
     font-family: 'Inter';
 }
 
+.checkbox__label_disabled {
+    color: var(--grey-2);
+}
+
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     border-color: var(--blue-1);
     background-color: var(--blue-1);
