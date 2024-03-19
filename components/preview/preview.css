@@ -1,0 +1,13 @@
+.preview {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    background-color: var(--grey-5);
+
+}
+
+.preview__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 367px);
+    gap: 30px;
+}

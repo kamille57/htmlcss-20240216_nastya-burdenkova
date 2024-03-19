@@ -1,4 +1,11 @@
 @import '../fonts/fonts.css';
+@import '../../components/page/page.css';
+@import '../../components/preview/preview.css';
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
+@import '../../components/header/header.css';
+@import '../../components/footer/footer.css';
+
 @import '../vendor/normalize.css';
 
 :root {
@@ -15,10 +22,6 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
-    --grey-5: #90A0B7;
-    --grey-6: #A0B1F5;
-    --oxford-blue: #334D6E;
-
 
     --error: var(--red);
     --success: var(--blue-2);
@@ -29,5 +32,10 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    border: 1px solid red;
 }
+
+/* html, body {
+    height: 100vh;
+} */
