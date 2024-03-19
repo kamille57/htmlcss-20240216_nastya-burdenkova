@@ -3,18 +3,34 @@
 
 <head>
     <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="./srcset.css">
+    <link rel="stylesheet" href="./checkbox.css">
 </head>
 
 <body>
-    <label class="checkbox">
-        <input class="checkbox__input" type="checkbox">
-        <div class="checkbox__state">
-            <div class="checkbox__control">
-
+    <div class="checkboxes">
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox">
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">Default</div>
             </div>
-        </div>
-    </label>
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" disabled>
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">Disabled</div>
+            </div>
+        </label>
+    </div>
 </body>
 
 </html>
