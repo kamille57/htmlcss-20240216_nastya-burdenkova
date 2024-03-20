@@ -1,0 +1,32 @@
+.modal {
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px 40px 47px;
+    width: 508px;
+    height: 381px;
+    background-color: var(--grey-7);
+}
+
+.modal__container {
+    padding: 30px 40px 33px 40px;
+    background-color: var(--white);
+    flex-grow: 1;
+    border-radius: 8px;
+}
+
+.modal__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--blue-4);
+}
+
+.modal__text {
+    color: var(--grey-4);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--blue-4);
+}

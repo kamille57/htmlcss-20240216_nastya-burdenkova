@@ -1,5 +1,6 @@
 @import '../fonts/fonts.css';
 @import '../vendor/normalize.css';
+@import '../../03-lection1/01-button/button.css';
 
 :root {
     --white: #ffffff;
@@ -10,6 +11,7 @@
     --blue-1: #4263EB;
     --blue-2: #374FC7;
     --blue-3: #2342C0;
+    --blue-4: #334D6E;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
@@ -17,6 +19,7 @@
     --grey-4: #495057;
     --grey-5: #90A0B7;
     --grey-6: #A0B1F5;
+    --grey-7: #C4C4C4;
     --oxford-blue: #334D6E;
 
 
