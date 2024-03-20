@@ -1,3 +1,10 @@
+.container {
+    padding: 35px 35px 35px 196px;
+    display: flex;
+    align-items: center;
+    gap: 156px;
+}
+
 .modal {
     display: flex;
     box-sizing: border-box;
@@ -12,6 +19,7 @@
     background-color: var(--white);
     flex-grow: 1;
     border-radius: 8px;
+    position: relative;
 }
 
 .modal__title {
@@ -29,4 +37,13 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--blue-4);
+}
+
+.modal__close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
 }
