@@ -12,22 +12,31 @@
     --white: #ffffff;
     --black: #212429;
     --pink: #F784AD;
-    --purple: #7048E8;
-    --dark-purple: #5028C6;
-    --blue: #4263EB;
-    --dark-blue: #2342C0;
+    --purple-1: #7048E8;
+    --purple-2: #5028C6;
+    --blue-1: #4263EB;
+    --blue-2: #374FC7;
+    --blue-3: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+<<<<<<< HEAD
     --grey-5: #F9FAFC;
+=======
+    --grey-5: #90A0B7;
+    --grey-6: #A0B1F5;
+    --oxford-blue: #334D6E;
+
+>>>>>>> master
 
     --error: var(--red);
-    --success: var(--blue);
+    --success: var(--blue-2);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
+    --primary: var(--blue-2);
+    --secondary: var(--purple-1);
+
 }
 
 * {
