@@ -8,25 +8,28 @@
 </head>
 
 <body>
-    <label class="input" for="input">
+    <div class="input" for="input">
         <input type="text" id="input" class="input__field" placeholder="Placeholder">
-    </label>
-    <label class="input" for="inputSuccess">
-        <input type="text" id="inputSuccess" class="input__field input__field_success" placeholder="Success">
-        <svg class="input__icon input__icon_success">
+    </div>
+
+    <div class="input input_success">
+        <input type="text" class="input__field " placeholder="Success">
+        <svg class="input__icon">
             <use href="../../assets/images/icons.svg#check-input"></use>
         </svg>
-    </label>
-    <label class="input" for="inputError">
-        <input type="text" id="inputError" class="input__field input__field_error" placeholder="Error">
-        <svg class="input__icon input__icon_error">
+    </div>
+
+    <div class="input  input_error">
+        <input type="text" class="input__field" placeholder="Error">
+        <svg class="input__icon">
             <use href="../../assets/images/icons.svg#error"></use>
         </svg>
-    </label>
-    <label class="input" for="inputDisabled">
-        <input type="text" id="inputDisabled" class="input__field input__field_disabled" placeholder="Disabled"
-            disabled>
-    </label>
+    </div>
+
+    <div class="input">
+        <input type="text" class="input__field" placeholder="Disabled" disabled>
+    </div>
+
 </body>
 
 </html>

@@ -1,20 +1,26 @@
 .input {
-    box-sizing: border-box;
     position: relative;
+    width: 350px;
 }
 
 .input__field {
-    width: 350px;
-    height: 56px;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    width: 100%;
     border-radius: 8px;
     border: 1px solid var(--grey-2);
 }
 
-.input__field_disabled:disabled {
+.input__field:disabled {
     background-color: var(--grey-2);
 }
 
-.input__field_disabled:disabled::placeholder {
+.input__field:disabled::placeholder {
     color: var(--white);
 }
 
@@ -22,20 +28,7 @@
     outline: 1px solid var(--blue-1);
 }
 
-.input__field_success:focus {
-    outline: 1px solid var(--grey-2);
-}
-
-.input__field_error:focus {
-    outline: 1px solid var(--red);
-}
-
 .input__field::placeholder {
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
     color: var(--grey-2);
 }
 
@@ -43,15 +36,8 @@
     color: var(--grey-4);
 }
 
-.input__field_success::placeholder {
-    color: var(--grey-4);
-}
-
-.input__field_error::placeholder {
-    color: var(--grey-4);
-}
-
 .input__icon {
+    display: none;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -60,10 +46,23 @@
     transform: translateY(-50%);
 }
 
-.input__icon_success {
+.input_success {
     color: var(--blue-2);
 }
 
-.input__icon_error {
+.input_success .input__field:focus {
+    outline: 1px solid var(--blue-2);
+}
+
+.input_success .input__field:focus + .input__icon,
+.input_error .input__field:focus + .input__icon {
+    display: block;
+}
+
+.input_error {
     color: var(--red);
+}
+
+.input_error .input__field:focus {
+    outline: 1px solid var(--red);
 }
