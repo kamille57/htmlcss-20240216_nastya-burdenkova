@@ -68,6 +68,6 @@
     background-color: var(--grey-2);
 }
 
-.toggler__icon_disabled {
-    background-color: var(--grey-3);
+.toggler__input:disabled+.toggler__state .toggler__icon { 
+    background-color: var(--grey-3); 
 }
