@@ -46,3 +46,9 @@
 .button_alternate:hover {
     border: 1px solid var(--black);
 }
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .button {
+      display: none;
+    }
+  }
