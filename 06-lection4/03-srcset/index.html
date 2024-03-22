@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./srcset.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./srcset.css">
+</head>
+
+<body>
+        <picture>
+            <source media="(min-width: 768px)" srcset="public/forest_768.jpg 2x">
+            <source media="(min-width: 400px)" srcset="public/forest_400.jpg">
+            <img class="image" src="public/forest_400.jpg" alt="Загадочный лес в сумерках.">
+        </picture>
+</body>
+
 </html>
