@@ -2,15 +2,17 @@
     padding-top: 68px;
     padding-bottom: 92px;
     background-color: var(--grey-8);
-    /* display: flex;
+    width: 100vw;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
+    gap: 64px;
 }
 
 .preview__cards {
     display: grid;
     grid-template-columns: repeat(2, 164px);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     gap: 16px;
 }
@@ -21,4 +23,16 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+}
+
+@media (min-width: 900px) {
+    .preview {
+        gap: 0;
+        padding: 24px;
+    }
+
+    .preview__cards {
+        grid-template-columns: repeat(3, minmax(164px, 350px));
+        grid-template-rows: repeat(2, 367px);
+    }
 }

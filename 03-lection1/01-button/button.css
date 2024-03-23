@@ -1,5 +1,6 @@
 .button {
     margin: 0 auto;
+    display: block;
     padding: 15px 66px;
     height: 48px;
     border-radius: 8px;
@@ -39,7 +40,6 @@
 }
 
 .button_alternate {
-    display: none;
     border: 1px solid var(--grey-3);
     background-color: var(--white);
     color: var(--grey-4);
@@ -48,16 +48,3 @@
 .button_alternate:hover {
     border: 1px solid var(--black);
 }
-
-/* Показываем кнопку на экранах шириной 600px и более */
-@media (min-width: 900px) {
-    .button_alternate {
-        display: block;
-    }
-}
-
-/* @media screen and (max-width: 729px) {
-    .button {
-        display: block;
-    }
-} */
