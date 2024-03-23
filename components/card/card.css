@@ -1,4 +1,5 @@
 .card {
+    box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -45,6 +46,27 @@
     color: var(--grey-3);
 }
 
+
+.card__atom, .card__molecule, .card__organism {
+    display: none;
+}
+
+#allComponents:checked ~ .preview__cards .card {
+    display: flex;
+}
+
+#atoms:checked ~ .preview__cards .card__atom {
+    display: flex;
+}
+
+#molecules:checked ~ .preview__cards .card__molecule {
+    display: flex;
+}
+
+#organisms:checked ~ .preview__cards .card__organism {
+    display: flex;
+}
+  
 @media (min-width: 900px) {
     .card__heading {
         font-family: 'Roboto', sans-serif;

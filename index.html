@@ -9,59 +9,70 @@
 <body>
     <main class="preview page__main">
         <div class="container">
-            <div class="preview__cards">
-                <figure class="card">
-                    <div class="card__component">
-                    </div>
-                    <figcaption class="card__figcaption">
-                        <h3 class="card__heading">Tooltip</h3>
-                        <p class="card__subtitle">Container</p>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <div class="card__component"></div>
-                    <figcaption class="card__figcaption">
-                        <h3 class="card__heading">Custom form elements</h3>
-                        <p class="card__subtitle">Element</p>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <div class="card__component">
+            <h1 class="preview__title">Reusable component library</h1>
 
-                    </div>
-                    <figcaption class="card__figcaption">
-                        <h3 class="card__heading">Calendar</h3>
-                        <p class="card__subtitle">Container</p>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <div class="card__component"></div>
-                    <figcaption class="card__figcaption">
-                        <h3 class="card__heading">Modal dialog</h3>
-                        <p class="card__subtitle">Container</p>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <div class="card__component"></div>
-                    <figcaption class="card__figcaption">
-                        <h3 class="card__heading">Histogram</h3>
-                        <p class="card__subtitle">Element</p>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <div class="card__component"></div>
-                    <figcaption class="card__figcaption">
-                        <h3 class="card__heading">Avatar</h3>
-                        <p class="card__subtitle">Element</p>
-                    </figcaption>
-                </figure>
+            <div class="tabs">
+                
+                <input type="radio" id="allComponents" name="componentType" checked>
+                <label class="tabs__label" for="allComponents">All Components</label>
+
+                <input type="radio" id="atoms" name="componentType" class="tab__atoms">
+                <label class="tabs__label" for="atoms">Atoms</label>
+
+                <input type="radio" id="molecules" name="componentType" class="tab__molecules">
+                <label class="tabs__label" for="molecules">Molecules</label>
+
+                <input type="radio" id="organisms" name="componentType" class="tab__organisms">
+                <label class="tabs__label" for="organisms">Organisms</label>
+
+                <div class="preview__cards">
+                    <figure class="card card__atom">
+                        <div class="card__component"></div>
+                        <figcaption class="card__figcaption">
+                            <h3 class="card__heading">Tooltip</h3>
+                            <p class="card__subtitle">Atom</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__atom">
+                        <div class="card__component"></div>
+                        <figcaption class="card__figcaption">
+                            <h3 class="card__heading">Avatar</h3>
+                            <p class="card__subtitle">Atom</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__molecule">
+                        <div class="card__component"></div>
+                        <figcaption class="card__figcaption">
+                            <h3 class="card__heading">Custom form elements</h3>
+                            <p class="card__subtitle">Molecules</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__molecule">
+                        <div class="card__component"></div>
+                        <figcaption class="card__figcaption">
+                            <h3 class="card__heading">Calendar</h3>
+                            <p class="card__subtitle">Molecule</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__organism">
+                        <div class="card__component"></div>
+                        <figcaption class="card__figcaption">
+                            <h3 class="card__heading">Modal dialog</h3>
+                            <p class="card__subtitle">Organism</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__organism">
+                        <div class="card__component"></div>
+                        <figcaption class="card__figcaption">
+                            <h3 class="card__heading">Histogram</h3>
+                            <p class="card__subtitle">Organism</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-
         </div>
-        <button class="button button_alternate">Load more</button>
 
     </main>
-
 </body>
 
 </html>

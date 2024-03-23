@@ -5,7 +5,7 @@
 @import '../../components/card/card.css';
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
-
+@import '../../components/tabs/tabs.css';
 @import '../../03-lection1/01-button/button.css';
 
 @import '../vendor/normalize.css';
