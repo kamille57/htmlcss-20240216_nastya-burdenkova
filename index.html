@@ -3,76 +3,84 @@
 <html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Библиотека многоразовых компонентов для профессионально разработанных и полностью адаптивных HTML-фрагментов.">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Reusable component library</title>
 </head>
 
 <body>
     <main class="preview page__main">
-        <div class="container">
-            <h1 class="preview__title">Reusable component library</h1>
+        <h1 class="preview__title">Reusable component library</h1>
 
-            <div class="tabs">
-                
-                <input type="radio" id="allComponents" name="componentType" checked>
+        <div class="tabs">
+            <input type="radio" id="allComponents" name="componentType" checked>
+            <input type="radio" id="atoms" name="componentType" class="tab__atoms">
+            <input type="radio" id="molecules" name="componentType" class="tab__molecules">
+            <input type="radio" id="organisms" name="componentType" class="tab__organisms">
+
+            <div class="tabs__wrapper">
                 <label class="tabs__label" for="allComponents">All Components</label>
-
-                <input type="radio" id="atoms" name="componentType" class="tab__atoms">
                 <label class="tabs__label" for="atoms">Atoms</label>
-
-                <input type="radio" id="molecules" name="componentType" class="tab__molecules">
                 <label class="tabs__label" for="molecules">Molecules</label>
-
-                <input type="radio" id="organisms" name="componentType" class="tab__organisms">
                 <label class="tabs__label" for="organisms">Organisms</label>
+            </div>
 
-                <div class="preview__cards">
-                    <figure class="card card__atom">
-                        <div class="card__component"></div>
-                        <figcaption class="card__figcaption">
-                            <h3 class="card__heading">Tooltip</h3>
-                            <p class="card__subtitle">Atom</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card card__atom">
-                        <div class="card__component"></div>
-                        <figcaption class="card__figcaption">
-                            <h3 class="card__heading">Avatar</h3>
-                            <p class="card__subtitle">Atom</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card card__molecule">
-                        <div class="card__component"></div>
-                        <figcaption class="card__figcaption">
-                            <h3 class="card__heading">Custom form elements</h3>
-                            <p class="card__subtitle">Molecules</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card card__molecule">
-                        <div class="card__component"></div>
-                        <figcaption class="card__figcaption">
-                            <h3 class="card__heading">Calendar</h3>
-                            <p class="card__subtitle">Molecule</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card card__organism">
-                        <div class="card__component"></div>
-                        <figcaption class="card__figcaption">
-                            <h3 class="card__heading">Modal dialog</h3>
-                            <p class="card__subtitle">Organism</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="card card__organism">
-                        <div class="card__component"></div>
-                        <figcaption class="card__figcaption">
-                            <h3 class="card__heading">Histogram</h3>
-                            <p class="card__subtitle">Organism</p>
-                        </figcaption>
-                    </figure>
-                </div>
+            <div class="preview__cards tabs__content_allComponents">
+                <!-- All Components content -->
+                <figure class="card card__atom">
+                    <div class="card__component"></div>
+                    <figcaption class="card__figcaption">
+                        <h3 class="card__heading">Tooltip</h3>
+                        <p class="card__subtitle">Atom</p>
+                    </figcaption>
+                </figure>
+                <figure class="card card__atom">
+                    <div class="card__component"></div>
+                    <figcaption class="card__figcaption">
+                        <h3 class="card__heading">Avatar</h3>
+                        <p class="card__subtitle">Atom</p>
+                    </figcaption>
+                </figure>
+                <figure class="card card__molecule">
+                    <div class="card__component"></div>
+                    <figcaption class="card__figcaption">
+                        <h3 class="card__heading">Custom form elements</h3>
+                        <p class="card__subtitle">Molecules</p>
+                    </figcaption>
+                </figure>
+                <figure class="card card__molecule">
+                    <div class="card__component"></div>
+                    <figcaption class="card__figcaption">
+                        <h3 class="card__heading">Calendar</h3>
+                        <p class="card__subtitle">Molecule</p>
+                    </figcaption>
+                </figure>
+                <figure class="card card__organism">
+                    <div class="card__component"></div>
+                    <figcaption class="card__figcaption">
+                        <h3 class="card__heading">Modal dialog</h3>
+                        <p class="card__subtitle">Organism</p>
+                    </figcaption>
+                </figure>
+                <figure class="card card__organism">
+                    <div class="card__component"></div>
+                    <figcaption class="card__figcaption">
+                        <h3 class="card__heading">Histogram</h3>
+                        <p class="card__subtitle">Organism</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
 
     </main>
+    <footer class="footer">
+        <h2 class="footer__title">About</h2>
+        <p class="footer__text">This project is a collection of professionally designed, pre-built, fully
+            responsive HTML snippets you can drop into your projects. Get started by checking out our free
+            preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+    </footer>
 </body>
 
 </html>

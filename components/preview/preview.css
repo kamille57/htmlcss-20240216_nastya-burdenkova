@@ -1,21 +1,22 @@
 .preview {
-    
-    width: 100vw;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 64px;
 
 }
 
+
 .preview__cards {
-    background-color: var(--grey-8);
+    width: 100vw;
+    background-color: blue;
     padding-top: 68px;
     padding-bottom: 92px;
     margin-top: 11px;
     display: grid;
-    grid-template-columns: repeat(2, 164px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(164px, 350px));
+    grid-template-rows: repeat(2, 367px);
     justify-content: center;
     gap: 16px;
 }
@@ -26,16 +27,4 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-}
-
-@media (min-width: 900px) {
-    .preview {
-        gap: 0;
-        padding: 24px;
-    }
-
-    .preview__cards {
-        grid-template-columns: repeat(3, minmax(164px, 350px));
-        grid-template-rows: repeat(2, 367px);
-    }
 }
