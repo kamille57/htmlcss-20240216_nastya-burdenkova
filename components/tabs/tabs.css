@@ -2,6 +2,14 @@
     background-color: transparent;
 }
 
+.tabs__title {
+    margin: 0 auto 40px;
+    max-width: 1110px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+}
 
 .tabs__label {
     padding-bottom: 8px;
@@ -12,6 +20,13 @@
     line-height: 24px;
     text-align: left;
     color: var(--grey-3);
+    text-decoration: none;
+}
+
+
+.tabs__wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 
@@ -19,6 +34,10 @@
     display: none;
 }
 
-.tabs__label:hover, .tabs__label:active, .tabs__label:focus, .tabs__label > input:checked + label {
-    text-decoration: underline;
-  }
+.tabs input#allComponents:checked~.tabs__wrapper label[for="allComponents"],
+.tabs input#atoms:checked~.tabs__wrapper label[for="atoms"],
+.tabs input#molecules:checked~.tabs__wrapper label[for="molecules"],
+.tabs input#organisms:checked~.tabs__wrapper label[for="organisms"] {
+   border-bottom: 5px solid var(--black);
+   color: var(--black);
+}
