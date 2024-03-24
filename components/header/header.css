@@ -1,8 +1,15 @@
-.header-container {
+.header {
+    padding-top: 24px;
+    padding-bottom: 38px;
+}
+
+.header__inner {
+
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    gap: 56px;
 }
 
 .header__logo-container {

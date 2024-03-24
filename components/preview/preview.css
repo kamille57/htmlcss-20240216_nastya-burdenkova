@@ -9,8 +9,7 @@
 
 
 .preview__cards {
-    width: 100vw;
-    background-color: var(--grey-8);
+    
     border-top: 1px solid var(--grey-2);
     padding-top: 68px;
     padding-bottom: 92px;
@@ -19,5 +18,5 @@
     grid-template-columns: repeat(3, minmax(164px, 350px));
     grid-template-rows: repeat(2, 367px);
     justify-content: center;
-    gap: 16px;
+    gap: 30px;
 }

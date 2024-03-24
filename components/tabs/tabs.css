@@ -2,6 +2,11 @@
     background-color: transparent;
 }
 
+.tabs__content_allComponents {
+    width: 100vw;
+    background-color: var(--grey-8);
+}
+
 .tabs__title {
     margin: 0 auto 40px;
     max-width: 1110px;
