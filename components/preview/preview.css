@@ -16,7 +16,7 @@
     padding-bottom: 92px;
     margin-top: 11px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(2, 367px);
     justify-content: center;
     gap: 30px;
