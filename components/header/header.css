@@ -50,7 +50,7 @@
     color: var(--grey-3);
 }
 
-.header__nav-link:focus {
+.header__nav-link:focus, .header__nav-link:active {
     color: var(--black);
 }
 
