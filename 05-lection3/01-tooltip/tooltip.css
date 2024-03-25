@@ -18,7 +18,7 @@
     text-align: center;
     white-space: nowrap;
     position: absolute;
-    bottom: calc(100% + 8px);
+    bottom: calc(100% + 12px);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -31,6 +31,12 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.tooltip__icon {
+    color: var(--blue-1);
+    width: 24px;
+    height: 24px;
 }
 
 .tooltip__trigger {

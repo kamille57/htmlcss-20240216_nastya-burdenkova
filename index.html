@@ -27,7 +27,7 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li><a class="header__nav-link" href="#">Components</a></li>
-                        <li><a class="header__nav-link" href="#about">About</a></li> 
+                        <li><a class="header__nav-link" href="#about">About</a></li>
                         <li><a class="header__nav-link" href="#">Contacts</a></li>
                     </ul>
                 </nav>
@@ -44,7 +44,7 @@
             </div>
         </div>
     </header>
-    
+
     <main class="preview page__main">
         <div class="tabs">
             <h1 class="tabs__title">Reusable component library</h1>
@@ -62,14 +62,29 @@
             </div>
 
             <div class="preview__cards tabs__content_allComponents">
+
                 <!-- All Components content -->
                 <div class="card card__atom">
-                    <div class="card__component"></div>
+                    <div class="card__component">
+                        <div class="tooltip">
+                            <div class="tooltip__trigger">
+                                <svg class="tooltip__icon">
+                                    <use href="/assets/images/icons.svg#help"></use>
+                                </svg>
+                            </div>
+                            <div class="tooltip__bubble">Helper Text</div>
+                        </div>
+                    </div>
                     <h3 class="card__heading">Tooltip</h3>
                     <p class="card__subtitle">Atom</p>
                 </div>
                 <div class="card card__atom">
-                    <div class="card__component"></div>
+                    <div class="card__component">
+                        <div class="avatar">
+                            <img class="avatar__image" src="/06-lection4/01-avatar/public/avatar-200.jpg"
+                                alt="Ваш аватар.">
+                        </div>
+                    </div>
                     <h3 class="card__heading">Avatar</h3>
                     <p class="card__subtitle">Atom</p>
                 </div>
@@ -79,7 +94,57 @@
                     <p class="card__subtitle">Molecules</p>
                 </div>
                 <div class="card card__molecule">
-                    <div class="card__component"></div>
+                    <div class="card__component">
+                        <div class="calendar">
+                            <h2 class="calendar__title">October 2019</h2>
+                            <div class="calendar__wrapper">
+                                <div class="calendar__inner">
+                                    <span class="calendar__item-day">Mon</span>
+                                    <span class="calendar__item-day">Tue</span>
+                                    <span class="calendar__item-day">Wed</span>
+                                    <span class="calendar__item-day">Thu</span>
+                                    <span class="calendar__item-day">Fri</span>
+                                    <span class="calendar__item-day">Sat</span>
+                                    <span class="calendar__item-day">Sun</span>
+                                    <span class="calendar__item-date"></span>
+                                    <span class="calendar__item-date"></span>
+                                    <span class="calendar__item-date"></span>
+                                    <span class="calendar__item-date"></span>
+                                    <span class="calendar__item-date">1</span>
+                                    <span class="calendar__item-date">2</span>
+                                    <span class="calendar__item-date">3</span>
+                                    <span class="calendar__item-date">4</span>
+                                    <span class="calendar__item-date">5</span>
+                                    <span class="calendar__item-date">6</span>
+                                    <span class="calendar__item-date">7</span>
+                                    <span class="calendar__item-date">8</span>
+                                    <span class="calendar__item-date">9</span>
+                                    <span class="calendar__item-date">10</span>
+                                    <span class="calendar__item-date">11</span>
+                                    <span class="calendar__item-date">12</span>
+                                    <span class="calendar__item-date">13</span>
+                                    <span class="calendar__item-date">14</span>
+                                    <span class="calendar__item-date">15</span>
+                                    <span class="calendar__item-date">16</span>
+                                    <span class="calendar__item-date">17</span>
+                                    <span class="calendar__item-date calendar__item-date_bright">18</span>
+                                    <span class="calendar__item-date calendar__item-date_dark">19</span>
+                                    <span class="calendar__item-date calendar__item-date_dark">20</span>
+                                    <span class="calendar__item-date calendar__item-date_dark">21</span>
+                                    <span class="calendar__item-date calendar__item-date_dark">22</span>
+                                    <span class="calendar__item-date calendar__item-date_bright">23</span>
+                                    <span class="calendar__item-date">24</span>
+                                    <span class="calendar__item-date">25</span>
+                                    <span class="calendar__item-date">26</span>
+                                    <span class="calendar__item-date">27</span>
+                                    <span class="calendar__item-date">28</span>
+                                    <span class="calendar__item-date">29</span>
+                                    <span class="calendar__item-date">30</span>
+                                    <span class="calendar__item-date">31</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <h3 class="card__heading">Calendar</h3>
                     <p class="card__subtitle">Molecule</p>
                 </div>
@@ -89,15 +154,60 @@
                     <p class="card__subtitle">Organism</p>
                 </div>
                 <div class="card card__organism">
-                    <div class="card__component"></div>
+                    <div class="card__component">
+                        <div class="histogram">
+                            <div class="histogram__titles">
+                                <h2 class="histogram__total">Total orders</h2>
+                                <a href="#" class="histogram__link">View all</a>
+                            </div>
+                            <p class="histogram__text">50254</p>
+                            <div class="histogram__chart">
+                                <div class="histogram__item histogram__item_xxl"></div>
+                                <div class="histogram__item histogram__item_m"></div>
+                                <div class="histogram__item histogram__item_xs"></div>
+                                <div class="histogram__item histogram__item_l"></div>
+                                <div class="histogram__item histogram__item_xs"></div>
+                                <div class="histogram__item histogram__item_s"></div>
+                                <div class="histogram__item histogram__item_l"></div>
+                                <div class="histogram__item histogram__item_xxl"></div>
+                                <div class="histogram__item histogram__item_xxxs"></div>
+                                <div class="histogram__item histogram__item_xs"></div>
+                                <div class="histogram__item histogram__item_s"></div>
+                                <div class="histogram__item histogram__item_m"></div>
+                                <div class="histogram__item histogram__item_xxxs"></div>
+                                <div class="histogram__item histogram__item_xxl"></div>
+                                <div class="histogram__item histogram__item_xxxs"></div>
+                                <div class="histogram__item histogram__item_l"></div>
+                                <div class="histogram__item histogram__item_s"></div>
+                                <div class="histogram__item histogram__item_xs"></div>
+                                <div class="histogram__item histogram__item_m"></div>
+                                <div class="histogram__item histogram__item_s"></div>
+                                <div class="histogram__item histogram__item_xxxs"></div>
+                                <div class="histogram__item histogram__item_l"></div>
+                                <div class="histogram__item histogram__item_m"></div>
+                                <div class="histogram__item histogram__item_xl"></div>
+                                <div class="histogram__item histogram__item_s"></div>
+                                <div class="histogram__item histogram__item_xxxs"></div>
+                                <div class="histogram__item histogram__item_s"></div>
+                                <div class="histogram__item histogram__item_xxxs"></div>
+                                <div class="histogram__item histogram__item_m"></div>
+                                <div class="histogram__item histogram__item_xxs"></div>
+                            </div>
+
+                        </div>
+                    </div>
                     <h3 class="card__heading">Histogram</h3>
                     <p class="card__subtitle">Organism</p>
                 </div>
+                <div class="card__button" colspan="3">
+                <button class="button button_alternate">Load more</button>
             </div>
+            </div>
+
         </div>
     </main>
     <footer class="footer">
-        <h2 class="footer__title" id="about">About</h2> 
+        <h2 class="footer__title" id="about">About</h2>
         <p class="footer__text">This project is a collection of professionally designed, pre-built, fully
             responsive HTML snippets you can drop into your projects. Get started by checking out our free
             preview components, or browsing the PNG previews in the categories you're most curious about.</p>
