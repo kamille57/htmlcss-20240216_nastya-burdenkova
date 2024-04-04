@@ -26,6 +26,7 @@
     text-align: left;
     color: var(--grey-3);
     text-decoration: none;
+    cursor: pointer;
 }
 
 

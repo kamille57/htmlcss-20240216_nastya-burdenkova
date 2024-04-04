@@ -1,0 +1,10 @@
+.component {
+    background-color: var(--grey-8);
+    height: 100vh;
+}
+
+.component__card {
+    width: 825px;
+    height: 782px;
+    background-color: var(--white);
+}
